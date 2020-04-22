@@ -21,3 +21,7 @@ function eff_damageEffect(user, target) {
   target.takeDamage(damageRoll, user.monsterData.attack);
   // Sends function to View for rendering effect
 };
+
+function eff_minorDebuffEffect(user, target, stat) {
+  target.stat -= 5;
+}

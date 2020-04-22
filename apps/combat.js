@@ -30,7 +30,7 @@ function initializeCombat() {
     userMonster = new MonsterBattler(getRandomMonster());
     localStorage.setItem('userMonster', JSON.stringify(userMonster));
   }
-  
+
   userMonster.currentHealth = userMonster.maximumHealth;
   for (var i in userMonster.monsterData.abilitySet){
     userMonster.abilitySet.push( AbilityDatabase[userMonster.monsterData.abilitySet[i]] );
