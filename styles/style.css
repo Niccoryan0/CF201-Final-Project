@@ -160,7 +160,7 @@ height:95px;
     height: 480px;
     width: 640px;
     border: 1px solid black;
-    background-color: rgba(255, 255, 255, 0.233)
+    background-color: rgba(255, 255, 255, 0.616)
 }
 
 /* #enemyBattlePosition {
@@ -234,6 +234,7 @@ header, .spriteTray > img, #userMonsterProfile, p {
   #enemyBattlePosition > img, #userBattlePosition > img {
       height: 160px;
   }
+
   
 #abilityTray {
     display: flex;
