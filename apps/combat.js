@@ -35,6 +35,7 @@ function initializeCombat() {
   for (var i in userMonster.monsterData.abilitySet){
     userMonster.abilitySet.push( AbilityDatabase[userMonster.monsterData.abilitySet[i]] );
   }
+
   console.log(userMonster);
   renderBattleSprites(userMonster.monsterData.imgSrc, enemyMonster.monsterData.imgSrc);
   enableAbilityTray();
@@ -77,3 +78,4 @@ function userAttack(event){
     executeTurn(1);
   }
 }
+

@@ -16,6 +16,7 @@ Ability.prototype.execute = function(user, target) {
     randomExecutionRoll = Math.round(Math.floor(Math.random() * 100));
     if(randomExecutionRoll < this.effects[eff].executionChance) this.effects[eff].effectMethod(user, target);
     else console.log("FAILED TO EXECUTE");
+
   }
 };
 
@@ -23,7 +24,8 @@ var AbilityDatabase = {};
 AbilityDatabase['Trample'] = new Ability([
   new Effect(100, {'damage' : 5}, eff_damageEffect),
   new Effect(100, {'damage' : 5}, eff_damageEffect)
-],
+], 
+
 'Trample');
 AbilityDatabase['Body Slam'] = new Ability([
   new Effect(80, {'damage' : 12}, eff_damageEffect)
