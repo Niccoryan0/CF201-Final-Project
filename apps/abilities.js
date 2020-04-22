@@ -15,7 +15,7 @@ Ability.prototype.execute = function(user, target) {
   for(var eff in this.effects) {
     randomExecutionRoll = Math.round(Math.floor(Math.random() * 100));
     if(randomExecutionRoll < this.effects[eff].executionChance) this.effects[eff].effectMethod(user, target);
-
+    else console.log("FAILED TO EXECUTE");
   }
 };
 
